@@ -18,7 +18,7 @@ export default function TechnologyPage() {
         <nav className="container mx-auto px-6 flex items-center justify-between">
           <div className="flex items-center space-x-1">
             <img
-              src="/src/components/DALL_E_2024-11-09_10.59.20_-_A_modern__sleek_logo_for_a_media_company_called_PulseMedia._The_logo_should_feature_bold_and_clean_typography_for__PulseMedia__with_a_dynamic_pulse_or-removebg-preview.png"
+              src="https://i.ibb.co/RpQ48KR/DALL-E-2024-11-09-10-59-20-A-modern-sleek-logo-for-a-media-company-called-Pulse-Media-The-logo-shoul.png"
               alt="PulseMedia Logo"
               className="w-14 h-14 transition-transform duration-500 hover:scale-110 will-change-transform"
               loading="lazy"
@@ -122,7 +122,7 @@ export default function TechnologyPage() {
                     {item.excerpt}
                   </p>
                   <a
-                    href="#"
+                    href="https://www.bbc.com/innovation"
                     className="text-blue-400 mt-4 inline-block hover:underline"
                   >
                     Read more...

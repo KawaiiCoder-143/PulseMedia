@@ -23,7 +23,7 @@ export default function SportsPage() {
         <nav className="container mx-auto px-6 flex items-center justify-between">
           <div className="flex items-center space-x-1 animate-fadeIn">
             <img
-              src="src\components\DALL_E_2024-11-09_10.59.20_-_A_modern__sleek_logo_for_a_media_company_called_PulseMedia._The_logo_should_feature_bold_and_clean_typography_for__PulseMedia__with_a_dynamic_pulse_or-removebg-preview.png"
+              src="https://i.ibb.co/RpQ48KR/DALL-E-2024-11-09-10-59-20-A-modern-sleek-logo-for-a-media-company-called-Pulse-Media-The-logo-shoul.png"
               alt="PulseMedia Logo"
               className="w-14 h-14 transition-transform duration-500 hover:scale-110"
             />
@@ -62,22 +62,22 @@ export default function SportsPage() {
       <section className="relative flex items-center justify-center h-[500px] mt-4 mb-8 overflow-hidden rounded-lg mx-4 lg:mx-10">
         {/* Animated Background Image */}
         <div
-          className="absolute inset-0 w-full h-full rounded-lg transform transition-transform duration-700 ease-in-out hover:scale-110 hover:opacity-80"
+          className="absolute inset-0 w-full h-full rounded-lg transition-transform duration-1000 ease-in-out transform hover:scale-110 will-change-transform"
           style={{
             backgroundImage:
               "url('https://t3.ftcdn.net/jpg/08/08/12/46/240_F_808124692_clKAuqkSV5DMe1yprJa7rW4ppkXucrCj.jpg')",
             backgroundSize: "cover",
             backgroundPosition: "center",
-            transition: "transform 0.7s ease-in-out, opacity 0.5s ease-in-out", // Adds smooth transition for scale and opacity changes
+            filter: "blur(3px)",
           }}
         ></div>
 
         {/* Overlay */}
-        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent animate-fadeIn"></div>
+        <div className="absolute inset-0 bg-gradient-to-t from-gray-900/80 to-transparent"></div>
 
         {/* Content */}
-        <div className="relative z-10 flex flex-col items-center text-center px-4 space-y-4 animate-slideUp">
-          <h1 className="text-4xl font-extrabold bg-gradient-to-r from-purple-400 to-cyan-500 text-transparent bg-clip-text animate-fadeInUp">
+        <div className="relative z-10 flex flex-col items-center text-center px-4 space-y-4 animate-fadeInUp">
+          <h1 className="text-4xl font-extrabold bg-gradient-to-r from-purple-400 to-cyan-500 text-transparent bg-clip-text">
             Sports Arena
           </h1>
           <p className="text-base text-gray-200">
@@ -129,7 +129,7 @@ export default function SportsPage() {
                   </h3>
                   <p className="text-sm text-gray-300 mb-4">{item.excerpt}</p>
                   <a
-                    href="#"
+                    href="https://www.bbc.com/sport"
                     className="text-sm font-bold text-purple-500 hover:text-cyan-500 transition-colors"
                   >
                     Read more...

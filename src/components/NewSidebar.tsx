@@ -103,7 +103,7 @@ function NewSidebar({ isCollapsed, toggleSidebar }: NewSidebarProps) {
         {/* Logo and Menu Button */}
         <div className="flex items-center justify-start mb-4 sm:mb-6">
           <img
-            src="src\components\DALL_E_2024-11-09_10.59.20_-_A_modern__sleek_logo_for_a_media_company_called_PulseMedia._The_logo_should_feature_bold_and_clean_typography_for__PulseMedia__with_a_dynamic_pulse_or-removebg-preview.png"
+            src="https://i.ibb.co/RpQ48KR/DALL-E-2024-11-09-10-59-20-A-modern-sleek-logo-for-a-media-company-called-Pulse-Media-The-logo-shoul.png"
             alt="Logo"
             className="w-8 h-8 sm:w-12 sm:h-12 transform transition-transform duration-500 hover:scale-110"
           />

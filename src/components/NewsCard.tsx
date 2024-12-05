@@ -8,6 +8,18 @@ interface NewsCardProps {
 }
 
 export default function NewsCard({ category, title, excerpt, image }: NewsCardProps) {
+  // Map categories to their respective URLs
+  const categoryLinks: Record<string, string> = {
+    Gaming: "https://www.bbc.com/news/topics/c008ql15vdxt",
+    Music: "https://www.bbc.com/culture/music",
+    Entertainment: "https://www.bbc.com/culture/entertainment-news",
+    Technology: "https://www.bbc.com/innovation",
+    Sports: "https://www.bbc.com/sport",
+    Business: "https://www.bbc.com/business",
+  };
+
+  const redirectUrl = categoryLinks[category] || "#";
+
   return (
     <div className="group relative transform transition-transform duration-700 hover:scale-105 hover:z-10 hover:rotate-1">
       {/* Card Container */}
@@ -23,7 +35,7 @@ export default function NewsCard({ category, title, excerpt, image }: NewsCardPr
         
         {/* Card Content */}
         <div className="relative z-10">
-          {/* News Image with Enhanced Animation */}
+          {/* News Image */}
           <img
             src={image}
             alt={title}
@@ -46,9 +58,20 @@ export default function NewsCard({ category, title, excerpt, image }: NewsCardPr
           <p className="text-gray-400 text-sm mb-6 line-clamp-3 group-hover:text-gray-300 transition-colors duration-500">
             {excerpt}
           </p>
-          
-          {/* Action Buttons with Enhanced Animations */}
-          <div className="flex items-center gap-4 mt-4">
+
+          {/* Minimal Read More Button */}
+          <a
+            href={redirectUrl}
+            target="_blank"
+            rel="noopener noreferrer"
+            className="mt-4 inline-flex items-center text-sm font-medium text-blue-400 underline decoration-transparent 
+                       hover:text-blue-300 hover:decoration-blue-400 hover:decoration-2 transition-all duration-300"
+          >
+            Read More →
+          </a>
+
+          {/* Action Buttons */}
+          <div className="flex items-center gap-4 mt-6">
             <button className="flex items-center gap-1 text-gray-500 hover:text-blue-400 transition-colors duration-500 group">
               <Heart className="w-5 h-5 group-hover:scale-125 group-hover:text-red-500 transition-transform duration-300" />
               <span className="text-sm">124</span>

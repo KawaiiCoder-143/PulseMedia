@@ -1,0 +1,3 @@
+# Configuration for the NewsAPI integration
+NEWS_API_KEY=57d768345f574230841e82f469f658b0
+PORT=5000

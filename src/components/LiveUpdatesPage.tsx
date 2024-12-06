@@ -20,9 +20,11 @@ export default function EnhancedLiveUpdatesPage() {
   }
 
   const fetchSuggestions = async (query: string): Promise<void> => {
+    if (!query.trim()) return;
+
     try {
       const response = await axios.get<{ articles: Suggestion[] }>(
-        `https://newsapi.org/v2/everything?q=${query}&apiKey=57d768345f574230841e82f469f658b0`
+        `http://localhost:5000/api/news?query=${query}`
       );
       setSuggestions(response.data.articles.slice(0, 5));
     } catch (error) {
@@ -31,15 +33,15 @@ export default function EnhancedLiveUpdatesPage() {
   };
 
   const handleSearch = async () => {
-    if (!query) {
+    if (!query.trim()) {
       alert("Please enter a search query.");
       return;
     }
 
     setLoading(true);
     try {
-      const response = await axios.get(
-        `https://newsapi.org/v2/everything?q=${query}&apiKey=57d768345f574230841e82f469f658b0`
+      const response = await axios.get<{ articles: Article[] }>(
+        `http://localhost:5000/api/news?query=${query}`
       );
       setArticles(response.data.articles);
     } catch (error) {

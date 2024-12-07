@@ -1,7 +1,7 @@
-Pulse Media
+**Pulse Media**
 Pulse Media is a cutting-edge news website providing real-time updates on the latest events, breaking news, and trending stories from around the world. Our mission is to keep you informed with accurate, timely, and engaging content, delivered straight to your device.
 
-Features
+**Features**
 Live Updates: Stay up-to-date with live news feeds and real-time alerts on important events.
 
 Breaking News: Get instant notifications on breaking news stories as they happen.
@@ -12,7 +12,7 @@ User-Friendly Interface: Navigate easily through our intuitive and responsive we
 
 Multimedia Content: Enjoy a rich multimedia experience with videos, images, and interactive elements.
 
-Getting Started
+**Getting Started**
 Visit our website at www.pulsemedia.com to start exploring the latest news and updates. No sign-up required to access our content, but creating an account will enable personalized news feeds and alerts.
 
 Contributing

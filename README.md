@@ -1,4 +1,5 @@
 **Pulse Media**
+
 Pulse Media is a cutting-edge news website providing real-time updates on the latest events, breaking news, and trending stories from around the world. Our mission is to keep you informed with accurate, timely, and engaging content, delivered straight to your device.
 
 **Features**
